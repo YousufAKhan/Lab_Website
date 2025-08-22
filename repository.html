@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Repository - YAK Lab</title>
+    <meta name="description" content="Protected repository for YAK Lab members - protocols, data, and resources">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/repository.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/yak-logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/yak-logo.png" alt="YAK Lab Logo" class="nav-logo-img">
+                    <h2>YAK Lab</h2>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="research.html" class="nav-link">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a href="team.html" class="nav-link">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="publications.html" class="nav-link">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="repository.html" class="nav-link active">Repository</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="login-section" id="login-section">
+        <div class="container">
+            <div class="login-container">
+                <div class="login-card">
+                    <div class="login-header">
+                        <i class="fas fa-lock"></i>
+                        <h2>Lab Repository Access</h2>
+                        <p>Enter your credentials to access lab resources</p>
+                    </div>
+                    <form id="login-form" class="login-form">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Access Repository</button>
+                    </form>
+                    <div class="login-footer">
+                        <p>Contact the lab PI for access credentials</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Repository Content (Hidden until login) -->
+    <section class="repository-content" id="repository-content" style="display: none;">
+        <div class="container">
+            <div class="repository-header">
+                <h1>Lab Repository</h1>
+                <p>Welcome to the YAK Lab internal repository. Here you'll find protocols, data, and resources for our research.</p>
+                <button id="logout-btn" class="btn btn-secondary">Logout</button>
+            </div>
+
+            <!-- Quick Access -->
+            <div class="quick-access">
+                <h2>Quick Access</h2>
+                <div class="quick-grid">
+                    <a href="#protocols" class="quick-card">
+                        <i class="fas fa-flask"></i>
+                        <h3>Protocols</h3>
+                        <p>Lab protocols and methods</p>
+                    </a>
+                    <a href="#data" class="quick-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Repository</h3>
+                        <p>Research data and datasets</p>
+                    </a>
+                    <a href="#software" class="quick-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Software & Code</h3>
+                        <p>Analysis scripts and tools</p>
+                    </a>
+                    <a href="#resources" class="quick-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Resources</h3>
+                        <p>Papers, presentations, and more</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Protocols Section -->
+            <div class="repository-section" id="protocols">
+                <h2>Lab Protocols</h2>
+                <div class="protocol-grid">
+                    <div class="protocol-card">
+                        <div class="protocol-header">
+                            <h3>RNA Extraction Protocol</h3>
+                            <span class="protocol-version">v2.1</span>
+                        </div>
+                        <p>Standard protocol for RNA extraction from various sample types</p>
+                        <div class="protocol-meta">
+                            <span><i class="fas fa-calendar"></i> Updated: Dec 2024</span>
+                            <span><i class="fas fa-user"></i> Author: YAK</span>
+                        </div>
+                        <a href="#" class="protocol-link">View Protocol →</a>
+                    </div>
+                    
+                    <div class="protocol-card">
+                        <div class="protocol-header">
+                            <h3>CryoEM Sample Preparation</h3>
+                            <span class="protocol-version">v1.3</span>
+                        </div>
+                        <p>Protocol for preparing RNA samples for CryoEM analysis</p>
+                        <div class="protocol-meta">
+                            <span><i class="fas fa-calendar"></i> Updated: Nov 2024</span>
+                            <span><i class="fas fa-user"></i> Author: YAK</span>
+                        </div>
+                        <a href="#" class="protocol-link">View Protocol →</a>
+                    </div>
+                    
+                    <div class="protocol-card">
+                        <div class="protocol-header">
+                            <h3>Machine Learning Pipeline</h3>
+                            <span class="protocol-version">v1.0</span>
+                        </div>
+                        <p>Computational pipeline for RNA structure prediction</p>
+                        <div class="protocol-meta">
+                            <span><i class="fas fa-calendar"></i> Updated: Dec 2024</span>
+                            <span><i class="fas fa-user"></i> Author: YAK</span>
+                        </div>
+                        <a href="#" class="protocol-link">View Protocol →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Repository Section -->
+            <div class="repository-section" id="data">
+                <h2>Data Repository</h2>
+                <div class="data-grid">
+                    <div class="data-card">
+                        <div class="data-header">
+                            <h3>RNA Structure Datasets</h3>
+                            <span class="data-size">2.3 GB</span>
+                        </div>
+                        <p>Compiled datasets of RNA structures for machine learning training</p>
+                        <div class="data-meta">
+                            <span><i class="fas fa-calendar"></i> Last updated: Dec 2024</span>
+                            <span><i class="fas fa-download"></i> Downloads: 15</span>
+                        </div>
+                        <a href="#" class="data-link">Download Dataset →</a>
+                    </div>
+                    
+                    <div class="data-card">
+                        <div class="data-header">
+                            <h3>CryoEM Maps</h3>
+                            <span class="data-size">5.7 GB</span>
+                        </div>
+                        <p>High-resolution CryoEM maps of RNA-protein complexes</p>
+                        <div class="data-meta">
+                            <span><i class="fas fa-calendar"></i> Last updated: Nov 2024</span>
+                            <span><i class="fas fa-download"></i> Downloads: 8</span>
+                        </div>
+                        <a href="#" class="data-link">Download Maps →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Software Section -->
+            <div class="repository-section" id="software">
+                <h2>Software & Code</h2>
+                <div class="software-grid">
+                    <div class="software-card">
+                        <div class="software-header">
+                            <h3>RNA Structure Predictor</h3>
+                            <span class="software-version">v1.2.0</span>
+                        </div>
+                        <p>Python package for predicting RNA secondary structure using machine learning</p>
+                        <div class="software-meta">
+                            <span><i class="fab fa-python"></i> Python 3.8+</span>
+                            <span><i class="fab fa-github"></i> GitHub</span>
+                        </div>
+                        <a href="#" class="software-link">View Repository →</a>
+                    </div>
+                    
+                    <div class="software-card">
+                        <div class="software-header">
+                            <h3>CryoEM Analysis Tools</h3>
+                            <span class="software-version">v0.9.1</span>
+                        </div>
+                        <p>Custom scripts for processing and analyzing CryoEM data</p>
+                        <div class="software-meta">
+                            <span><i class="fab fa-python"></i> Python 3.8+</span>
+                            <span><i class="fab fa-github"></i> GitHub</span>
+                        </div>
+                        <a href="#" class="software-link">View Repository →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MkDocs Documentation Section -->
+            <div class="repository-section" id="mkdocs">
+                <h2>Lab Documentation</h2>
+                <div class="mkdocs-intro">
+                    <p>Access the complete lab documentation with protocols, data, software guides, and resources. Lab members can update content by uploading Markdown files.</p>
+                </div>
+                <div class="mkdocs-container">
+                    <div class="mkdocs-placeholder">
+                        <i class="fas fa-book"></i>
+                        <h3>YAK Lab Documentation</h3>
+                        <p>Your lab documentation will be embedded here once MkDocs is set up.</p>
+                        <div class="mkdocs-setup-info">
+                            <h4>Setup Instructions:</h4>
+                            <ol>
+                                <li>Install MkDocs: <code>pip install mkdocs mkdocs-material</code></li>
+                                <li>Create site: <code>mkdocs new yak-lab-docs</code></li>
+                                <li>Configure: Edit <code>mkdocs.yml</code></li>
+                                <li>Deploy: <code>mkdocs gh-deploy</code></li>
+                                <li>Replace the placeholder with your docs URL</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="mkdocs-actions">
+                    <a href="#" class="btn btn-primary" id="mkdocs-full-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Open Full Documentation
+                    </a>
+                    <a href="#" class="btn btn-secondary" id="mkdocs-edit-link" target="_blank">
+                        <i class="fas fa-edit"></i> Edit on GitHub
+                    </a>
+                    <button class="btn btn-outline" onclick="showMkDocsSetup()">
+                        <i class="fas fa-cog"></i> Setup Instructions
+                    </button>
+                </div>
+            </div>
+
+            <!-- Resources Section -->
+            <div class="repository-section" id="resources">
+                <h2>Lab Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h3>Lab Presentations</h3>
+                        <ul>
+                            <li><a href="#">Lab Meeting Slides - Dec 2024</a></li>
+                            <li><a href="#">Conference Presentation - RNA Society</a></li>
+                            <li><a href="#">Grant Proposal Materials</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h3>Reference Materials</h3>
+                        <ul>
+                            <li><a href="#">Key Papers Collection</a></li>
+                            <li><a href="#">Equipment Manuals</a></li>
+                            <li><a href="#">Safety Protocols</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="resource-card">
+                        <h3>Lab Calendar</h3>
+                        <ul>
+                            <li><a href="#">Lab Meeting Schedule</a></li>
+                            <li><a href="#">Equipment Reservations</a></li>
+                            <li><a href="#">Conference Deadlines</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>YAK Lab</h3>
+                    <p>Stanford University</p>
+                    <p>Department of Molecular and Cellular Physiology</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 YAK Lab, Stanford University. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/repository.js"></script>
+    <script src="js/cms-integration.js"></script>
+</body>
+</html> 

@@ -1,0 +1,681 @@
+/* Repository Page Styles */
+
+/* Login Section */
+.login-section {
+    padding: 120px 0 80px;
+    background: linear-gradient(135deg, #8C1515 0%, #B1040E 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.login-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.login-header {
+    margin-bottom: 2rem;
+}
+
+.login-header i {
+    font-size: 3rem;
+    color: #8C1515;
+    margin-bottom: 1rem;
+}
+
+.login-header h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.login-header p {
+    color: #666;
+    margin: 0;
+}
+
+.login-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e8ed;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #8C1515;
+}
+
+.login-form .btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.login-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e1e8ed;
+}
+
+.login-footer p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Repository Content */
+.repository-content {
+    padding: 120px 0 80px;
+    background: #f8f9fa;
+}
+
+.repository-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.repository-header h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.repository-header p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+#logout-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Quick Access */
+.quick-access {
+    margin-bottom: 4rem;
+}
+
+.quick-access h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.quick-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.quick-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quick-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    color: inherit;
+}
+
+.quick-card i {
+    font-size: 2.5rem;
+    color: #8C1515;
+    margin-bottom: 1rem;
+}
+
+.quick-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.quick-card p {
+    color: #666;
+    margin: 0;
+}
+
+/* Repository Sections */
+.repository-section {
+    margin-bottom: 4rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.repository-section h2 {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.repository-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #8C1515;
+}
+
+/* Protocol Cards */
+.protocol-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.protocol-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #8C1515;
+    transition: transform 0.3s ease;
+}
+
+.protocol-card:hover {
+    transform: translateY(-3px);
+}
+
+.protocol-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.protocol-header h3 {
+    color: #2c3e50;
+    margin: 0;
+}
+
+.protocol-version {
+    background: #8C1515;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.protocol-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.protocol-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.protocol-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.protocol-link {
+    color: #8C1515;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.protocol-link:hover {
+    color: #B1040E;
+}
+
+/* Data Cards */
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.data-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #8C1515;
+    transition: transform 0.3s ease;
+}
+
+.data-card:hover {
+    transform: translateY(-3px);
+}
+
+.data-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.data-header h3 {
+    color: #2c3e50;
+    margin: 0;
+}
+
+.data-size {
+    background: #8C1515;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.data-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.data-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.data-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.data-link {
+    color: #8C1515;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.data-link:hover {
+    color: #B1040E;
+}
+
+/* Software Cards */
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.software-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #8C1515;
+    transition: transform 0.3s ease;
+}
+
+.software-card:hover {
+    transform: translateY(-3px);
+}
+
+.software-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.software-header h3 {
+    color: #2c3e50;
+    margin: 0;
+}
+
+.software-version {
+    background: #8C1515;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.software-card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.software-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.software-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.software-link {
+    color: #8C1515;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.software-link:hover {
+    color: #B1040E;
+}
+
+/* Wiki Section */
+.wiki-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.wiki-intro p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.wiki-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.wiki-placeholder {
+    padding: 3rem;
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.wiki-placeholder i {
+    font-size: 4rem;
+    color: #8C1515;
+    margin-bottom: 1rem;
+}
+
+.wiki-placeholder h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.wiki-placeholder p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.wiki-setup-info {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.wiki-setup-info h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.wiki-setup-info ol {
+    color: #666;
+    line-height: 1.6;
+}
+
+.wiki-setup-info code {
+    background: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    color: #8C1515;
+}
+
+.wiki-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #8C1515;
+    border: 2px solid #8C1515;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #8C1515;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Wiki iframe (when active) */
+.wiki-iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* MkDocs Section */
+.mkdocs-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mkdocs-intro p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.mkdocs-container {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.mkdocs-placeholder {
+    text-align: center;
+    padding: 3rem 2rem;
+    border: 2px dashed #e1e8ed;
+    border-radius: 8px;
+    background: #f8f9fa;
+}
+
+.mkdocs-placeholder i {
+    font-size: 3rem;
+    color: #8C1515;
+    margin-bottom: 1rem;
+}
+
+.mkdocs-placeholder h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.mkdocs-placeholder p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.mkdocs-setup-info {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e1e8ed;
+}
+
+.mkdocs-setup-info h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.mkdocs-setup-info ol {
+    color: #666;
+    line-height: 1.6;
+}
+
+.mkdocs-setup-info code {
+    background: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    color: #8C1515;
+}
+
+.mkdocs-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mkdocs-iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Resources */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.resource-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #8C1515;
+}
+
+.resource-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.resource-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resource-card li {
+    margin-bottom: 0.5rem;
+}
+
+.resource-card a {
+    color: #8C1515;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.resource-card a:hover {
+    color: #B1040E;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 0 20px;
+    }
+    
+    .login-card {
+        padding: 2rem;
+    }
+    
+    .repository-header {
+        text-align: left;
+    }
+    
+    #logout-btn {
+        position: static;
+        margin-top: 1rem;
+    }
+    
+    .quick-grid,
+    .protocol-grid,
+    .data-grid,
+    .software-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .protocol-meta,
+    .data-meta,
+    .software-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 1.5rem;
+    }
+    
+    .repository-section {
+        padding: 1.5rem;
+    }
+    
+    .protocol-card,
+    .data-card,
+    .software-card,
+    .resource-card {
+        padding: 1rem;
+    }
+} 
