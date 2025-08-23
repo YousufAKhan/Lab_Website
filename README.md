@@ -36,7 +36,7 @@ Replace all placeholder text in `index.html` with your lab's information:
 - `[Lab Name]` → Your actual lab name
 - `[research area]` → Your research focus
 - `[Institution]` → Your university/institution
-- `[email@institution.edu]` → Your contact email
+- `yousuf@stanford.edu` → Your contact email
 - `[phone number]` → Your phone number
 - `[building, room number]` → Your lab location
 

@@ -1,11 +1,20 @@
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const mobileMenuClose = document.querySelector('.mobile-menu-close');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
 });
+
+// Close mobile menu when clicking on close button
+if (mobileMenuClose) {
+    mobileMenuClose.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+}
 
 // Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
@@ -13,7 +22,7 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
     navMenu.classList.remove('active');
 }));
 
-// Smooth scrolling for navigation links
+// Smooth scrolling for same-page navigation links only
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -24,6 +33,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 block: 'start'
             });
         }
+    });
+});
+
+// Ensure external page navigation works properly
+document.querySelectorAll('.nav-link[href^="http"], .nav-link[href^="/"], .nav-link[href^="./"], .nav-link[href^="../"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Allow normal navigation for external links
+        // The mobile menu will still close due to the previous event listener
     });
 });
 
