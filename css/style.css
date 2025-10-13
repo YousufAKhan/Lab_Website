@@ -1225,6 +1225,58 @@ html {
     margin-top: 2rem;
 }
 
+.member-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 0;
+}
+
+.member-photo {
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.member-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 2.5rem;
+}
+
+.member-info h3 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.member-title {
+    color: #8C1515;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.member-bio {
+    margin-bottom: 2rem;
+}
+
+.member-bio p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
 .member-placeholder {
     background: white;
     padding: 3rem 2rem;
@@ -1307,6 +1359,22 @@ html {
     
     .members-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .member-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .member-photo {
+        padding: 1.5rem;
+    }
+    
+    .member-info {
+        padding: 1.5rem;
+    }
+    
+    .member-info h3 {
+        font-size: 1.5rem;
     }
 }
 
