@@ -116,6 +116,10 @@ p {
     width: 100%;
 }
 
+.mobile-menu-close {
+    display: none;
+}
+
 .hamburger {
     display: none;
     flex-direction: column;
@@ -493,6 +497,7 @@ p {
     }
     
     .mobile-menu-close {
+        display: block;
         position: absolute;
         top: 1rem;
         right: 1rem;
