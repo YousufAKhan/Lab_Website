@@ -1038,6 +1038,17 @@ html {
     margin-bottom: 1rem;
 }
 
+.news-article a {
+    color: #8C1515;
+    text-decoration: none;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.news-article a:hover {
+    text-decoration: underline;
+}
+
 .news-tags {
     display: flex;
     gap: 0.5rem;
